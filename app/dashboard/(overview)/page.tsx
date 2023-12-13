@@ -5,10 +5,10 @@ import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import CardWrapper from '@/app/ui/dashboard/cards';
 
-import // fetchRevenue,
-// fetchLatestInvoices,
-// fetchCardData,
-'@/app/lib/data';
+// import // fetchRevenue,
+// // fetchLatestInvoices,
+// // fetchCardData,
+// '@/app/lib/data';
 
 import {
   RevenueChartSkeleton,
@@ -16,6 +16,10 @@ import {
   CardsSkeleton,
 } from '@/app/ui/skeletons';
 
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 export default async function Page() {
   // const revenue = await fetchRevenue();
   // const latestInvoices = await fetchLatestInvoices();
